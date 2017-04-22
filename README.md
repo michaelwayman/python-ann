@@ -17,5 +17,5 @@ Training epoch 1/1.
 complete.
 Testing the neural network.
 complete.
-Neural network is 95.94\% accurate at predicting handwritten digits.
+Neural network is 95.94% accurate at predicting handwritten digits.
 ```
