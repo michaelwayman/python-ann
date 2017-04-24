@@ -27,8 +27,8 @@ class NeuralNet(object):
         output_errors = targets - final_outputs
         hidden_errors = numpy.dot(self.who.T, output_errors)
 
-        self.who += self.learning_rate * numpy.dot(output_errors * final_outputs * (1.0 - final_outputs), numpy.transpose(hidden_outputs))
-        self.wih += self.learning_rate * numpy.dot(hidden_errors * hidden_outputs * (1.0 - hidden_outputs), numpy.transpose(inputs))
+        self.who += self.learning_rate * numpy.dot(output_errors * final_outputs * (1.0 - final_outputs), hidden_outputs.T)
+        self.wih += self.learning_rate * numpy.dot(hidden_errors * hidden_outputs * (1.0 - hidden_outputs), inputs.T)
 
     def query(self, inputs_list):
         inputs = numpy.array(inputs_list, ndmin=2).T

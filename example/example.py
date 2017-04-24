@@ -67,7 +67,7 @@ if __name__ == '__main__':
     nn = NeuralNet(input_nodes, hidden_nodes, output_nodes, learning_rate)
 
     # Train
-    train_the_neural_net(nn)
+    train_the_neural_net(nn, epochs=3)
 
     # Test
     test_results = numpy.asarray(test_the_neural_net(nn))
