@@ -7,6 +7,6 @@ This example depends on the MNIST data set in CSV format.
 
 ### Usage
 
- - Download the training and testing data and place them in this folder.
+ - Download the training and testing data and place them the same folder as the example.
  - Run `python example.py`
  
